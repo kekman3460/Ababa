@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>2D Araba Oyunu - Manuel Vites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <div id="top-row">
+      <div id="score">Skor: 0</div>
+      <div id="telemetry">
+        <div id="speed">Hız: 0 km/h</div>
+        <div id="gear">Vites: 1</div>
+        <div id="rpm">RPM: 0</div>
+      </div>
+    </div>
+
+    <div id="controls">
+      <div id="left-controls">
+        <button id="gearDown" class="control-btn">V-</button>
+        <button id="gearUp" class="control-btn">V+</button>
+        <button id="soundToggle" class="control-btn">Ses: Aç</button>
+      </div>
+
+      <div id="right-controls">
+        <button id="gasBtn" class="touch-btn">Gaz</button>
+        <button id="brakeBtn" class="touch-btn">Fren</button>
+      </div>
+    </div>
+
+    <div id="hint">Klavye: W gaz, S fren, Q/E vites, A/D veya ←/→ yön</div>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <script src="main.js"></script>
+</body>
+</html>
